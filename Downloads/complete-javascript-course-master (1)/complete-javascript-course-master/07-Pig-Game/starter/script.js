@@ -71,7 +71,7 @@ btnHold.addEventListener('click', function () {
     finalScores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       finalScores[activePlayer];
-    if (finalScores[activePlayer] < 20) {
+    if (finalScores[activePlayer] < 100) {
       shiftPlayer();
     } else {
       playing = false;
